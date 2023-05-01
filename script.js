@@ -24,18 +24,7 @@ $(document).ready(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-    var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-    var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+   
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
@@ -57,4 +46,19 @@ $(document).ready(function() {
             }
         }
     });
+
+    $(window).scroll(function (e) {
+        // logic
+        let windowTop = $(this).scrollTop();
+
+        $('.menu li a').each(function (event) {
+            if (windowTop >= $($(this).attr('href')).offset().top - 100) {
+                // Remove 'active' from previously highlighted menu items
+                $('.menu .active').removeClass('active');
+        
+                // Highlight the current menu item by adding 'active' class
+                $(this).addClass('active');
+            }
+        });
+    })
 });

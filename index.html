@@ -17,8 +17,13 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Neetu Gond</title>
+    <title>Neetu Gond</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -35,11 +40,13 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Neetu</a></div>
+            <div class="logo"><a href="#"><img src="./images/logoN.png" alt=""></a></div>
+            <!-- navbar menu section -->
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#home" class="menu-btn " >Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <!-- experience -->
+                <li><a href="#experience" class="menu-btn">Experience</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#services" class="menu-btn">Project</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
@@ -56,7 +63,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Neetu Gond</div>
                 <div class="text-3">Full-stack web developer</div>
-                <a href="https://drive.google.com/file/d/1-MJXkm54_6TNazASAhAoRZPutxPHrCgY/view?usp=sharing" target="_blank">Download CV</a>
+                <a href="https://drive.google.com/file/d/1-MJXkm54_6TNazASAhAoRZPutxPHrCgY/view?usp=sharing" target="_blank">RESUME</a>
             </div>
         </div>
     </section>
@@ -77,28 +84,97 @@
         </div>
     </section>
 
+    <section class="experience" id="experience">
+        <div class="max-width">
+            <h2 class="title ex-title">Experience</h2>
+            <div class="about-content">
+                <h3 class="acies">Acies Consulting LLP</h3>
+
+                    <div class="text">a year of experience as a web developer at Acies Consulting, I primarily focused on the frontend part of projects. I was responsible for implementing new features according to clients' requirements and reviewing code to debug and correct any issues. Additionally, I collaborated with team members to determine system loads and develop improvement plans, ensuring the efficient and effective performance of the project. My experience in these areas has strengthened my ability to problem-solve and communicate effectively within a team environment.</p>
+                    <!-- <a href="#">Download CV</a> -->
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                        <ul>
+                            <li>Building responsive website using HTML,CSS,JS,React.</li>
+                            <li>Creating backend application in Node, ExpressJS.</li>
+                            <li>Building Simple RESTful CRUD APIs.</li>
+                            <li>Knowledge of MongoDB Database.</li>
+                            <li>Knowledge of various UI libraries</li>
+                        </ul>
+                    </div>
+                <div class="column right">
+                    <div class="bars">
+                    <div class="html">
+                            <img src="./images/html-5.svg" width="50px" alt="">
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="css">
+                            <img src="./images/css-3.svg" width="50px" alt="">
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="js">
+                            <img src="./images/javascript.svg"height="50px" alt="">
+                         </div>
+                    </div>
+                    <div class="bars">
+                        <div class="react">
+                            <img src="./images/react.svg" height="50px"alt="">
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="node">
+                            <img src="./images/nodejs-icon.svg" height="55px" alt="">
+                         </div>
+                    </div>
+                    <div class="bars">
+                        <div class="npm">
+                            <img src="./images/npm.svg" width="70px" alt="">
+                         </div>
+                    </div>
+                    <div class="bars">
+                        <div class="mongo">
+                            <img src="./images/mongodb.svg" height="55px" alt="">
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="express">
+                            <img src="./images/express.svg" height="50px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title">My Projects</h2>
             <div class="project-content">
                 <div class="card">
                     <div class="box">
-                        <div class="text">shopperstop.com</div>
+                        <div class="text"><p>shopperstop.com</p></div>
                         <img src="./images/shopperstop.png" width="400px" alt="">
                         
-                       <p>A clone of E-commerce website</p>
-                        <ul>
-                            <li>Built authentication and integrated it with the frontend.</li>
-                            <li>Laid out the database schema and build the REST API for
-                                the same.</li>
-                            <li>Built Sign-in/Sign-up page</li>
-                            <li>Developed the payment gatewaypage anf given static otp</li>
-                           
-                        </ul>
+                       <p class="detail">An e-commerce website where users can purchase clothing and all kinds of fashion products.</p>
+                        <p class="detail"><h5>Features : </h5>
+                            Sign-in/Sign-up validation with backend,Dynamic product page, payment gateway,Dynamic cart page with coupon functionality.</p>
+                        <h5>Tech Stack: HTML | CSS | JavaScript | Node | Express | MongoDB</h5>
                         <div class="button">
-                            
-                            <button ><a href="https://github.com/Niks14041/Clone_of_Shoppersstop.com.git"> Source code</a></button>
-                        <button><a href="https://hopeful-aryabhata-699d50.netlify.app">Website</a></button>
+                            <a href="https://github.com/neetugond/shopperstop-clone.git" target="_blank">
+                                <img src="./images/github-icon.svg"  alt="">
+                            </a>
+                            <a href="https://jovial-bose-95ed42.netlify.app/" target="_blank">
+                                <img src="./images/web.png" alt="">
+                            </a>
                         </div>
                         
                         
@@ -106,24 +182,23 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <div class="text">Shien.com</div>
+                        <div class="text"><p>apple.com</p></div>
 
-                        <img src="./images/shien.png" width="400px" alt="">
+                        <img src="./images/apple_homepage.png" width="400px" alt="">
                         
                         
-                       <p>A clone of E-commerce website</p>
-                        <ul>
-                            <li>Built authentication and integrated it with the frontend.</li>
-                            <li>For databases used Local storage.
-                                Built the Home page.</li>
-                            <li>Developed the cart page and added sorting function.</li>
-                            <li>Laid out the payment gateway page and gave static otp</li>
-                           
-                        </ul>
-                        <div class="button">
-                            
-                            <button ><a href="https://github.com/neetugond/shein.com"> Source code</a></button>
-                        <button><a href="https://shein-project.vercel.app/home.html">Website</a></button>
+                        <p class="detail">An e-commerce website where users can shop everything iPhone, iPad, Apple Watch, Mac etc. .</p>
+                        <p class="detail"><h5>Features : </h5>
+                            an individual react and redux based project built Home page, product page, product detail page, cart page, checkout, payment page and order details page.</p>
+                            <h5>Tech Stack: React | Redux | Material ui | Bootstrap</h5>
+                            <div class="button">
+                                <a href="https://github.com/neetugond/apple.com.git" target="_blank">
+                                    <img src="./images/github-icon.svg"  alt="">
+                                </a>
+                                <a href="https://apple-neetugond.vercel.app/" target="_blank">
+                                    <img src="./images/web.png" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     </div>
@@ -133,22 +208,6 @@
         </div>
         </div>
     </section>
-<section class="tech" id="tech">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="tech_logo">
-               
-                <img src="./images/html-5.svg" alt="">
-                <img src="./images/css-3.svg" alt="">
-                <img src="./images/javascript.svg"height="70px" alt="">
-                <img src="./images/react.svg" height="70px"alt="">
-                <img src="./images/nodejs-icon.svg" height="70px" alt="">
-                <img src="./images/mongodb.svg" height="70px" alt="">
-                <img src="./images/express.svg" height="70px" alt="">
-               
-             </div>
-        </div>
-    </section>
 
     <section class="contact" id="contact">
         <div class="max-width">
@@ -156,66 +215,36 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Neetu Gond</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Mumbai, India</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title"><a href="/cdn-cgi/l/email-protection">ngond92@gmail.com</a></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                           
-                            <div class="info_connect">
-                                <img src="" alt="" />
-                                <div class="git"><a href="https://github.com/neetugond""><img src="./images/github-icon.svg" width="40px"   alt=""></a></div>
-                                <div class="linked"><a href="https://www.linkedin.com/in/neetu-gond-104992230/"><img src="./images/linkedin-icon.svg" width="40px"   alt=""></a></div>
+                           <div class="row">
                             
+                                <p> <i class="material-icons">
+                                    person
+                                    </i> Neetu Gond</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="row">
+                               
+                                <p>  <i class="material-icons">
+                                    location_on
+                                    </i> Mumbai, India</p>
+                            </div>
+                            <div class="row">
+                               
+                                <p> <i class="material-icons">
+                                    email
+                                    </i> ngond92@gmail.com</p>
+                            </div>
+                     </div>
                 <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+                    <div class="info_connect">
+                        <div class="git"><a href="https://github.com/neetugond" target="_blank"><img src="./images/github-icon.svg" width="30px"   alt=""></a></div>
+                        <div class="linked"><a href="https://www.linkedin.com/in/neetu-gond-104992230/" target="_blank"><img src="./images/linkedin-icon.svg" width="30px"   alt=""></a></div>
+                        <div class="email"><a href="mailto:ngond92@gmail.com" target="_blank"><img src="./images/google-gmail.svg" width="30px"   alt=""></a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer>
+<footer>
         <span>Created By neetugond | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

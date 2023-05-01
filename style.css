@@ -62,7 +62,8 @@ section .title {
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: ubuntu, sans-serif
+    font-family: ubuntu, sans-serif;
+    color: white;
 }
 
 section .title::before {
@@ -81,7 +82,7 @@ section .title::after {
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: gray;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%)
@@ -97,8 +98,8 @@ section .title::after {
 }
 
 .navbar.sticky {
-    padding: 15px 0;
-    background: gray
+    padding: 0px 0;
+    background-color:rgb(71, 70, 70);
 }
 
 .navbar .max-width {
@@ -107,15 +108,19 @@ section .title::after {
     justify-content: space-between
 }
 
-.navbar .logo a {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600
+.navbar .logo a img {
+    width: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    background-color: gray;
+    border-radius: 50%;
 }
 
 .navbar .logo a span {
-    color: crimson;
-    transition: all .3s ease
+    color: gray;
+    transition: all .3s ease;
+    margin: 2px;
 }
 
 .navbar.sticky .logo a span {
@@ -155,7 +160,7 @@ section .title::after {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: gray;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -218,7 +223,7 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-    color: crimson;
+    color: gray;
     font-weight: 500
 }
 
@@ -235,12 +240,12 @@ section .title::after {
     transition: all .3s ease
 }
 
-.home .home-content a:hover {
-    color: crimson;
-    background: 0 0
-}
+/* .home .home-content a:hover {
+ background: 0 0
+} */
 .about{
     padding: 2%;
+    background-color: rgba(24, 23, 23, 0.836);
 }
 
 .about .about-content .left {
@@ -248,8 +253,8 @@ section .title::after {
 }
 
 .about .about-content .left img {
-    height: 500px;
-    width: 350px;
+    height: 400px;
+    width: 300px;
     object-fit: cover;
     border-radius: 6px
 }
@@ -260,28 +265,85 @@ section .title::after {
 
 .about .about-content .right .text {
     font-size: 25px;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-bottom: 10px;
-    text-align: center;
     padding: 1%;
+    color: white;
 }
-.about .about-content .right .text:hover{
-    color: rgb(92, 91, 91)
+.skills .title{
+    color: #111;
 }
+.skills .skills-content .column {
+    width: calc(50% - 20px);
+    /* border: 5px solid green; */
+}
+
+.skills .skills-content .left .text {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.skills .skills-content .left ul {
+    /* text-align: justify; */
+    font-size: 20px;
+}
+.skills .skills-content .left ul li{
+ line-height: 35px;
+   list-style: none;
+}
+
+.html{
+    grid-area: html;
+}
+.js{
+    grid-area:js;
+}
+.react{
+    grid-area: react;
+}
+.node{
+    grid-area: node;
+}
+.npm{
+    grid-area: npm;
+}
+.mongo{
+    grid-area: mongo;
+}
+.express{
+    grid-area: express;
+}
+
+.skills .skills-content .right  {
+    display: grid;
+    grid-template-areas: 
+    'html css js'
+    'react node npm'
+    'mongo express express';
+    grid-gap: 1%;
+  
+}
+.skills .skills-content .right .bars {
+ 
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 
 .projects{
     color: #fff;
-    background: #111
+    background-color: rgba(24, 23, 23, 0.836);
 }
+
 
 .projects .title::before{
-    background: #fff
+    background: #fff;
 }
-
-
-
 .projects .project-content .card {
-    width: calc(48% - 20px);
+    width: calc(50% - 20px);
     background: #222;
     border-radius: 6px;
     padding: 50px 25px;
@@ -300,11 +362,12 @@ section .title::after {
 .projects .project-content .card .box .text{
     text-align: center;
     padding: 2%;
-}
-.projects .project-content .card .box ul li{
-    list-style: none;
+    font-size: 22px;
 }
 
+.projects .project-content .card .box .text .detail{
+    font-size: 13px;
+}
 .projects .project-content .card .box img {
    width: 99%;
 }
@@ -313,182 +376,56 @@ section .title::after {
     transform: scale(1.05)
 }
 
-.projects .project-content .card .box .button button{
-    padding: 2%;
-    margin-top: 3%;
-    border-radius: 10%;
-    background-color: #111;
-    border: 1px solid white;
-   
-
-}
-.projects .project-content .card .box .button button:hover{
-   background-color: #555;
-   
+.projects .project-content .card .box .button img{
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    margin: 5px;
     
 }
-.projects .project-content .card .box .button button a{
-    color: #f1f1f1;
-}
-.projects .project-content .card .box .button button a:hover{
-    color: #f1f1f1;
-}
-
-.tech{
-    height: 250px;
-    padding: 0px;
-    margin: 2%;
-    /* box-sizing: border-box; */
-   
-    
-}
-.tech .max-width .tech_logo{
-    margin: auto;
-    /* border: 1px solid red;  */
-    width: 56%;
-    justify-content: space-between;
-     
-}
-
-.tech_logo img{
-    /* border: 1px solid red; */
-    width: 50px;
-   background-color: rgb(248, 242, 242);
-   margin-right: 5.5%;
-} 
 
 .contact{
-    background-color: #111;
-    color: white;
+    background-color:white;
+    color: black;
     padding: 3%;
+    margin: auto;
 }
-.info_connect{
-    background-color: black;
+.contact .title{
+    color: #111;
+}
+.contact-content{
     display: flex;
-    height: 40px;
-    border: 4px;
-    
+    flex-direction: row;
 }
-.info_connect .git{
-    background-color: #f1f1f1;
-    margin-right: 10px;
-  
+.contact .contact-content .text{
+font-weight: 500;
+font-size: 20px;
+margin-bottom: 30px;
 }
+.contact .contact-content .left{
+    width: 50%;
+}
+.contact .contact-content .left i{
 
-.contact .contact-content .column {
-    width: calc(50% - 30px);
+    padding-bottom: 0%;
+    margin-top: 4%;
 }
-
-.contact .contact-content .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
 .contact .contact-content .left p {
-    text-align: justify
+margin-top: 0%; 
 }
 
-.contact .contact-content .left .icons {
-    margin: 10px 0
-}
+.contact .contact-content .right{
+    width: 50%;
+    margin-top: 10%;
 
-.contact .contact-content .row {
-    display: flex;
-    height: 65px;
-    align-items: center
 }
-
-.contact .contact-content .row .info {
-    margin-left: 30px;
+.contact .contact-content .right .info_connect div{
    
-}
-
-.contact .contact-content .row i {
-    font-size: 25px;
-    color: white;
-}
-
-.contact .contact-content .info .head {
-    font-weight: 500
-}
-
-.contact .contact-content .info .sub-title {
-    color: gray;
-}
-.contact .contact-content .info .sub-title a{
-    color: gray;
+   margin-left: 70%;
+   margin-bottom: 4%;
 
 }
 
-.contact .right form .fields {
-    display: flex
-}
-
-.contact .right form .field,
-.contact .right form .fields .field {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px
-}
-
-.contact .right form .textarea {
-    height: 80px;
-    width: 100%
-}
-
-.contact .right form .name {
-    margin-right: 10px
-}
-
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: poppins, sans-serif;
-    transition: all .3s ease
-}
-
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus {
-    border-color: #b3b3b3
-}
-
-.contact .right form .textarea textarea {
-    padding-top: 10px;
-    resize: none
-}
-
-.contact .right form .button-area {
-    display: flex;
-    align-items: center
-}
-
-.right form .button-area button {
-    /* color: #fff; */
-    display: block;
-    width: 160px !important;
-    height: 45px;
-    outline: none;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    flex-wrap: nowrap;
-    border: 2px solid gray;
-    transition: all .3s ease
-}
-
-.right form .button-area button:hover {
-    background-color: #111;
-    color: white;
-    cursor: pointer;
-}
 
 footer {
     background: gray;
@@ -506,22 +443,45 @@ footer span a:hover {
     text-decoration: underline
 }
 
+.active{
+    /* text-decoration: underline !important; */
+    text-shadow: 1px 2px 5px white ;
+}
+/* section{
+    height: 100vh;
+    
+} */
+
+.experience{
+    background: #222; 
+    color: white;
+}
+
+
+.ex-title{
+    font-size: 20px;
+    color:white;
+}
+.acies{
+    /* border:1px solid red; */
+    text-align: center;
+    padding: 0% 0% 3% 0%;
+}
+.acies .text{
+    font-size: 20px;
+}
+
+
+section .ex-title::before{
+    background-color: white;
+}
 @media(max-width:1104px) {
     .about .about-content .left img {
-        height: 350px;
-        width: 250px
+        height: 400px;
+        width: 300px
     }
+  
 
-
-
-}
-
-
-@media(max-width:991px) {
-    .max-width {
-        padding: 0 50px
-    }
-}
 
 @media(max-width:947px) {
     .menu-btn {
@@ -577,17 +537,18 @@ footer span a:hover {
     .about .about-content .right {
         flex: 100%
     }
+ 
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px
+    }
+ 
     .projects .project-content .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+        /* border: 1px solid red; */
     }
-    .tech_logo{
-        display: flex;
-justify-content: center;
-width: 5%;
-margin: 2%;
-    }
-    
+   
 }
 
 @media(max-width:690px) {
@@ -603,9 +564,14 @@ margin: 2%;
     .home .home-content a {
         font-size: 20px
     }
-    .projects .project-content .card {
-        width: 100%
+
+}
+
+@media(max-width:991px) {
+    .max-width {
+        padding: 0 50px
     }
+}
 }
 
 @media(max-width:500px) {
@@ -619,16 +585,7 @@ margin: 2%;
     .skills .skills-content .left .text {
         font-size: 19px
     }
-    .contact .right form .fields {
-        flex-direction: column
-    }
-    .contact .right form .name,
-    .contact .right form .email {
-        margin: 0
-    }
-    .right form .error-box {
-        width: 150px
-    }
+   
     .scroll-up-btn {
         right: 15px;
         bottom: 15px;
