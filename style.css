@@ -313,6 +313,7 @@ section .title::after {
 }
 .express{
     grid-area: express;
+    padding-top: 18px;
 }
 
 .skills .skills-content .right  {
@@ -445,7 +446,7 @@ footer span a:hover {
 
 .active{
     /* text-decoration: underline !important; */
-    text-shadow: 1px 2px 5px white ;
+    text-shadow: 1px 1px 2px white ;
 }
 /* section{
     height: 100vh;
@@ -459,16 +460,18 @@ footer span a:hover {
 
 
 .ex-title{
-    font-size: 20px;
     color:white;
 }
 .acies{
     /* border:1px solid red; */
     text-align: center;
     padding: 0% 0% 3% 0%;
+    font-family:  ubuntu, sans-serif;
+    font-size: 30px;
 }
-.acies .text{
-    font-size: 20px;
+.acies + .text{
+    font-size: 20px !important;
+    font-family:  ubuntu, sans-serif;
 }
 
 
@@ -548,6 +551,23 @@ section .ex-title::before{
         margin-bottom: 20px;
         /* border: 1px solid red; */
     }
+
+    .acies + .text{
+        text-align: center;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 19px;
+        text-align: center;
+    }
+    .skills .skills-content  .right {
+        justify-content: space-evenly;
+    }
+    .skills .skills-content .left ul{
+        text-align: center;
+    }
+
+    
    
 }
 
@@ -565,6 +585,23 @@ section .ex-title::before{
         font-size: 20px
     }
 
+    .acies + .text{
+        text-align: center;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .skills .skills-content .left ul{
+        text-align: center;
+    }
+    /* .skills .skills-content .right{
+        padding-left: 60px;
+    } */
+   
+
 }
 
 @media(max-width:991px) {
@@ -581,10 +618,59 @@ section .ex-title::before{
     .home .home-content .text-3 {
         font-size: 27px
     }
+    .acies + .text{
+        text-align: center;
+    }
     .about .about-content .right .text,
     .skills .skills-content .left .text {
-        font-size: 19px
+        font-size: 19px;
+        text-align: center;
     }
+
+    .skills .skills-content .left ul{
+        text-align: center;
+    }
+
+    .html{
+        grid-area: html;
+    }
+    .js{
+        grid-area:js;
+    }
+    .react{
+        grid-area: react;
+    }
+    .node{
+        grid-area: node;
+    }
+    .npm{
+        grid-area: npm;
+    }
+    .mongo{
+        grid-area: mongo;
+    }
+    .express{
+        grid-area: express;
+        padding-top: 18px;
+    }
+
+    .skills .skills-content .right .bar{
+        margin: auto;
+    }
+    
+    .skills .skills-content .right  {
+        display: grid;
+        grid-template-areas: 
+        'html css'
+        'js react'
+        'node npm'
+        'mongo mongo'
+        'express express';
+      
+    }
+    
+
+   
    
     .scroll-up-btn {
         right: 15px;
